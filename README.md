@@ -1,15 +1,13 @@
 # Interactive Spider Lily — Photo Bloom
 
-A fork of [cupidbity/spiderlily](https://github.com/cupidbity/spiderlily) (web version).
 MediaPipe hand tracking grows and blooms a plant, rendered full-screen with your
-webcam as a small window in the corner. The only change from the original: the
-procedural, vertex-colored petals/stamens have been replaced with real flower
-artwork — four glowing crimson lily images (`assets/flower-1..4.png`) rendered as
-camera-facing sprites that scale, twist, and fade in through the same staged
-bloom choreography (tight bud → petals lift → arch → full bloom → settle).
+webcam as a small window in the corner. Flowers use real photo artwork — four
+glowing crimson lily images (`assets/flower-1..4.png`) rendered as camera-facing
+sprites that scale, twist, and fade in through staged bloom choreography
+(tight bud → petals lift → arch → full bloom → settle).
 
-The plant skeleton (branch growth), hand tracking, camera controls, glow
-post-processing, HUD, and debug keys are otherwise unchanged from the original.
+Includes procedural branch growth, hand tracking, camera controls, glow
+post-processing, HUD, and debug keys.
 
 ## Run it
 
@@ -48,8 +46,7 @@ https — opening index.html directly as a file:// path will not work.)
 
 ## Tweaking
 
-Everything lives in the `PARAMS` object at the top of `index.html`. New/changed
-blocks vs. the original:
+Everything lives in the `PARAMS` object at the top of `index.html`. Key options:
 
 - `PARAMS.photo.images` — the 4 source images and their aspect ratios. Add or
   swap files in `assets/` and list them here (any count works; florets are
